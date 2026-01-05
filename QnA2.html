@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnA 2</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Reverse a number using a loop.
+
+        let num = 1234;
+        let rev = 0;
+
+        for (; num > 0; num = Math.floor(num/10)){
+            let digit = num % 10;
+            rev = rev * 10 + digit;
+        }
+        console.log(rev);
+
+
+
+        //While loop
+
+        //Print numbers from 1 to 10.
+
+
+        let i = 1;
+
+        while(i <=10)
+        {
+            console.log(i);
+            i++;
+        }
+
+
+        //Print even numbers between 1 to 50.
+
+
+        let j = 1;
+        while(j <= 50)
+        {
+            if(j % 2 == 0)
+        {
+            console.log(j);
+     
+        }
+               j++;
+        }
+
+
+        //Find the sum of first N natural numbers
+
+        let n = 1;
+        sum = 0;
+        while (n <= 10)
+        {
+            sum += n;
+            n++;
+        }
+        console.log(sum);
+
+        
+        //Print the multiplication table of a given number.
+
+
+        let t = 10;
+        let y=1;
+
+        while(y <= t)
+        {
+            console.log(y + "*" + t + "=" + (t*y));
+            y++;
+        }
+
+        
+        // Reverse a number using a loop.
+
+        numm = 1234;
+        rev = 0;
+
+        while (numm > 0)
+        {
+            let digi = numm % 10;
+            rev = rev * 10 + digi;
+            numm = Math.floor(numm/10);
+        }
+        console.log(rev);
+
+
+        // 5 Function
+
+        // Crate a function to add teo numbers
+
+
+
+        function Add(a ,b){
+         return a + b ;
+        }
+       console.log( Add(1 , 3));
+
+
+        const Ad = (a,b) => a + b;
+        console.log(Ad(1 , 4));
+
+        
+    // Write a function to check prime number
+
+    function isPrime (num1)
+    {
+        if(num1 <=1) return false;
+
+        for (let c = 2; c <= Math.sqrt(num1); c++)
+    {
+        if (num1 === 0)
+    {
+        return false;
+    }
+    }
+    return true;
+    }
+
+    console.log(isPrime(29));
+
+    // Function to find factorial of a number.
+
+
+    function factorial(n){
+        if(n < 0 ) return "Invalid Number";
+
+        let fact = 1;
+        for(let fac = 1; fac<=n;fac++)
+    {
+        fact *= fac;
+    }
+    return fact;
+    }
+    console.log(factorial(5));
+
+
+    function factorial1(n1)
+    {
+        if(n1 < 0) return "Invalid Number";
+
+        let fact1 = 1;
+        let fac1 = 1;
+        while(fac1 <= n1)
+    {
+        fact1 *= fac1;
+        fac1++; 
+    }
+    return fact1;
+    }
+
+    console.log(factorial1(5));
+
+
+
+    //Max of three numbers
+
+    function MaxofThree(a,b,c)
+    {
+        return (a >= b && a >= c) ? a : (b >= a && b >= c) ? b : c;
+    }
+    console.log(MaxofThree(-10,-30,-20));
+
+    //6 Array
+    //Create an array of 5 numbers and print all elements.
+
+
+     let arr = [10,20,30,40,50];
+
+    for(let v = 0; v< arr.length; v++)
+    {
+        console.log(arr[v]);
+    }
+
+
+    arr.forEach(v =>{
+        console.log(v);
+    });
+
+
+    for(let arr1 of arr )
+    {
+        console.log(arr1);
+    };
+
+
+
+
+
+
+
+
+    //Find the largest number in an array.
+
+    let arr1 = [10,2,44,454,22];
+
+    let max = arr1[0];
+
+    for(let m = 1; m < arr1.length; m++)
+    {
+        if(arr1[m] > max)
+    {
+        max = arr1[m];
+    }
+    }
+    console.log(max);
+
+    console.log(max1 = Math.max(...arr1));
+
+
+    arr1.forEach(ar =>{
+        if(ar > max){
+            max = ar;
+        }
+    });
+    console.log(max);
+
+
+    //Reverse an array
+
+
+    let art = [12,52,54,87,77];
+
+    art.reverse();
+
+    console.log(art);
+
+
+    let revs = [];
+
+    for(let d = art.length - 1; d >= 0 ; d--)
+    {
+        revs.push(art[d]);
+    }
+    console.log(revs);
+
+
+
+    //Count even and odd numbers in an array.
+
+    let numb = [1,2,3,4,5,6,7,8];
+
+    CountEven = 0;
+    CountOdd = 0;
+
+    for(let nums = 0; nums < numb.length; nums++)
+    {
+        if(numb[nums] % 2 === 0)
+    {
+        CountEven ++;
+        
+    }
+    else {
+        CountOdd ++;
+    }
+    }
+    console.log(CountEven);
+    console.log(CountOdd);
+
+
+    let dArr = [10,20,30,40,50,60,70,80];
+
+    even = 0;
+    odd = 0;
+
+
+
+    dArr.forEach(dNum => {
+        if(dNum % 2 === 0)even++;
+    else odd++;
+    });
+    console.log(odd,even);
+
+
+
+    for (let nus of dArr)
+    {
+        num % 2 == 0 ? even++ : odd++;
+    }
+    console.log(even , odd);
+
+
+        //Remove duplicate values from an array.
+
+        let newArray = [1,1,2,5,5,7,7,9,4,4];
+
+        let uniqueArray = [...new Set(newArray)];
+
+        console.log(uniqueArray);
+
+
+
+        newArr = [10,20,20,30,40,50,40];
+
+        newUnique = newArr.filter((value , index) => {
+            return newArr.indexOf(value) === index;
+        })
+        console.log(newUnique);
+
+
+
+        newAr = [12,45,78,45,12,78];
+
+        uniqu2 = [];
+
+        for(let g = 0 ; g < newAr.length; g++)
+        {
+            if(!uniqu2.includes(newAr[g]))
+        {
+            uniqu2.push(newAr[g]);
+        }
+        }
+        console.log(uniqu2);
+
+        
+    </script>
+</body>
+</html>
