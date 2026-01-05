@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Question</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+
+
+
+    <script>
+
+
+        // 1 - Basics (Variables & Data Types)
+        //Declare a variable to store your name and print it.
+
+        let name = 'Darshan';
+        console.log(name);
+
+
+        //Store two numbers and print their sum, difference, product, and division.
+
+        one = 10;
+        two = 20;
+
+        console.log(one + two);
+        console.log(one - two);
+        console.log(one * two);
+        console.log(one / two);
+        
+
+        //Check the type of a variable using typeof.
+
+        a = 1;
+        b = 'darshan';
+        c = [1,2,3];
+        d = [{
+            name : 'Darshan',
+            age : 20
+        },
+        {
+            name : 'krushanm',
+            age : 18         
+        }];
+
+        console.log(typeof(a));
+        console.log(typeof(b));
+        console.log(typeof(c));
+        console.log(typeof(d));
+
+
+        //Swap two numbers without using a third variable.
+
+
+        swap1 = 50;
+        swap2 = 60;
+
+
+        swap1 = swap1 ^ swap2;
+        swap2 = swap1 ^ swap2;
+        swap1 = swap1 ^ swap2;
+
+        console.log(swap1,swap2);
+
+
+        //Convert a string "123" into a number
+
+        let str = '123';
+        let num = Number(str);
+
+        console.log(num);
+
+
+
+
+        // 2 - Operators
+        //Check whether a number is even or odd.
+
+        let num1 = 10;
+
+        if(num1 % 2 === 0)
+        {
+            console.log('even');
+        }
+        else{
+            console.log('odd');
+        }
+
+
+
+        let num2 = 15;
+
+        let result = (num2 % 2 === 0) ? 'even' : 'odd';
+        console.log(result);
+        
+        
+        //Find the largest of two numbers using operators.
+
+
+        let num3 = 100;
+        let num4 = 50;
+
+        if(num3<num4)
+        {
+            console.log(num4,'Bigger');
+        }
+        else{
+            console.log(num3,"Bigger");
+        }
+
+
+        //Write a program to check if a number is positive, negative, or zero.
+
+        let num5 =  0;
+
+
+        if(num5 > 0)
+        {
+
+        console.log('psotive');
+
+        }
+        else if(num5 < 0)
+        {
+            console.log('negtive');
+        } 
+        else
+        {
+            console.log('zero');
+        }
+
+        //Use ternary operator to check if age ≥ 18.
+
+        age1 = 1;
+
+        let result2 = (age1 >= 18) ? 'Bigger' : 'Low';
+        console.log(result2);
+        
+
+        //Predict the output:
+
+        console.log(10 + '5');
+        console.log('5' + 10);
+        console.log('5' * 10);
+        console.log(10 - '88');
+
+
+
+
+        // 3 If-Else
+        //Check if a number is divisible by 5 and 11.
+
+        let numm = 2;
+
+        if(numm % 5 === 0)
+        {
+            console.log(numm,'Divisible By 5');
+        }
+        else if(numm % 11 === 0){
+            console.log(numm,'Divisible By 11');
+        }
+        else {
+            console.log('in vaild');
+        }
+
+        //Check whether a year is a leap yea
+
+        year = 2021;
+
+        if (year % 4 === 0 && year !==100 || year % 400 === 0)
+        {
+            console.log('leap Year');
+        }
+        else{
+            console.log('Not a Leap Year');
+        }
+
+        //Find the largest of three numbers.
+        let x = 100;
+        let y = 10;
+        let z = 50;
+
+
+        if(x > y && x > z)
+        {
+            console.log(x,'Bigger');
+        }
+        else if(y > x && y > z)
+        {
+            console.log(y,'Bigger');
+        }
+        else
+        {
+            console.log(z,'Bigger');
+        }
+
+
+        // Calculate grade based on marks:
+
+            let marks = 91;
+
+        if(marks >= 90)
+        {
+            console.log('Grade A');
+        }
+        else if (marks >= 75)
+        {
+            console.log('Grade B');
+        }
+        else if(marks >= 60)
+        {
+            console.log('Grade C');
+        }
+        else{
+            console.log('Fail');
+        }
+
+
+        // Check whether a character is a vowel or consonant.
+
+        let vowel = '1'
+
+        if(vowel === 'a' ||
+        vowel === 'A' || 
+        vowel ==='e' ||
+        vowel === 'E' ||
+        vowel === 'i' ||
+        vowel ===  'I' || 
+        vowel === 'o' ||
+        vowel === 'O' ||
+        vowel === 'u' ||
+        vowel === 'U')
+        {
+            console.log('vowel');
+        }
+        else{
+            console.log('Consonant');
+        }
+
+
+        vowels = 'aeiouAEIOU';
+
+        if(vowels.includes(vowel)){
+            console.log('Vowel');
+        }
+        else{
+            console.log('Consonant');
+        }
+
+
+        //4. Loops (for / while)
+        //Print numbers from 1 to 10.
+        let = 10
+        for(v = 1; v<=10; v++)
+        {
+            console.log(v);
+        }
+
+
+        //Print even numbers between 1 to 50.
+        let s = 50;
+        for(s = 1; s <=50; s++)
+        {
+            if(s % 2 ===0)
+        {
+            console.log(s);
+        }
+        
+        }
+    </script>
+</body>
+</html>
