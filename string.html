@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Count the number of vowels in a string.
+
+        let str = 'Darshan';
+        let count = 0;
+        let vowels = "aeiouAEIOU";
+
+        for (let i = 1 ; i <= str.length ; i++)
+        {
+            if(vowels.includes(str[i]))
+            {
+                count++;
+            }
+        }
+        console.log(count);
+
+        let string = 'Darshan';
+        let count1 = 0;
+
+        for(ch of string)
+        {
+            if('aeiouAEIOU'.includes(ch))
+        {
+            count1++;
+        }
+        }
+        console.log(count1);
+
+        let string2 = 'Darshan';
+        countVowels = string2.toLowerCase().split("").filter(c => 'aeiou'.includes(c)).length;
+        console.log(countVowels);
+
+
+        //Reverse a string.
+
+        let string3 = "Darshan";
+
+         let rev = string3.split("").reverse().join('');
+
+         console.log(rev);
+
+
+
+
+         let string4 = "Darshan";
+
+         let resv = "";
+
+         for(let i1 = string4.length - 1; i1 >=0 ; i1--)
+         {
+            resv += string4[i1];
+         }
+         console.log(resv);
+
+
+         let string5 = "Darshamn";
+
+         revv = "";
+
+          for(let ch1 of string5)
+          {
+            revv = ch1 + revv;
+          }
+
+          console.log(revv);
+
+
+          //Check whether a string is a palindrome.
+
+          let string6 = 'tat';
+
+          let pl = '';
+
+          for(let ch2 of string6)
+          {
+            pl = ch2 + pl;
+          }
+
+          if(string6 == pl)
+          {
+            console.log("is PL");
+          }
+        
+
+          function isPl(str1)
+          {
+            let left = 0;
+            let right = str1.length - 1;
+
+            while(left < right)
+          {
+            if(str1[left] !== str1[right])
+          {
+            return false;
+          }
+          left++;
+          right--;
+          }
+            return true;
+          }
+
+
+          console.log(isPl('darshan'));
+
+
+
+
+          //Find the longest word in a sentence.
+
+          function longWo(sen)
+          {
+            let words = sen.split(" ");
+            let long = "";
+
+            for(word of words)
+          {
+            if(word.length > long.length)
+          {
+            long = word;
+            }
+          }
+          return long;
+          }
+
+
+
+          console.log(longWo("Torrenza Mould Craft Pvt Ltd"));
+
+
+
+          function longestWord(sentence)
+          {
+            return sentence.split(" ").reduce((longest , current ) =>
+        current.length > longest.length ? current : longest,"");
+          }
+
+
+          console.log(longestWord("Darshan Jain"));
+
+
+
+
+          
+
+          
+    </script>
+</body>
+</html>

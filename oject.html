@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      //Create an object for a student (name, age, marks).
+
+      let student = {
+        name: "Jain Darshan",
+        age: 20,
+        marks: 98,
+        isPass: function () {
+          return this.marks >= 35;
+        },
+      };
+
+
+      let keyArr = Object.keys(student)
+
+      console.log(keyArr);
+
+      let valArr = Object.values(student);
+
+      console.log(valArr);
+
+      let entArr = Object.entries(student);
+
+      console.log(entArr);
+
+
+
+      for (let key in student) {
+        console.log(key, student[key]);
+      }
+
+
+      console.log(student.isPass());
+      console.log(student);
+      console.log(student.age);
+      console.log(student["name"]);
+
+      student.marks = 90;
+      console.log(student.marks);
+      console.log(student["marks"]);
+
+      //Access object values using dot and bracket notation.
+      let obj = { a: 10, b: 20 };
+      let key = "b";
+
+      console.log(obj[key]);
+
+      let user = { name: "Rahul", age: 25 };
+      user["mobile"] = "Apple 15Plus";
+      console.log(user);
+
+
+
+      
+    </script>
+  </body>
+</html>
